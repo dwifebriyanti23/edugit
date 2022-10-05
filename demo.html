@@ -2,20 +2,22 @@
 <html lang="en">
 
 <head>
-    <title>JS Function</title>
+    <title>JS Object</title>
 </head>
 
 <body>
-    <div id="demo"></div>
+    <p id="demo"></p>
 
     <script>
-        var x = myFunction(4, 3);
-        document.getElementById("demo").innerHTML = x;
+        //create an object:
+        const person = {
+            firstName: "John",
+            lastName: "Doe"
+        };
 
-        function myFunction() {
-            alert("Hello World");
-        }
-        myFunction();
+        alert(person.firstName);
+
+        document.getElementById("demo").innerHTML = person.firstName;
     </script>
 </body>
 
